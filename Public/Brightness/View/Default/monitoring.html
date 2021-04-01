@@ -1,0 +1,304 @@
+<!--
+ * @Author: Brightness
+ * @Date: 2020-12-07 14:03:21
+ * @LastEditors: Brightness
+ * @LastEditTime: 2020-12-08 18:08:38
+ * @Description: 监控报价页面
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 , maximum-scale=1.0 ,user-scalable=0">
+    
+    <title>Document</title>
+    <!-- swiper -->
+    <link rel="stylesheet" href="./Brightness/View/js/swiper/css/swiper.css">  
+    <link rel="stylesheet" href="./Brightness/View/css/monitoring.css">
+    <!-- weui -->
+    <link rel="stylesheet" href="//cdn.bootcss.com/weui/0.4.3/style/weui.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/jquery-weui/0.8.3/css/jquery-weui.min.css">
+</head>
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-no-swiping">
+                <h2 class="title"><span>客户信息</span> </h2>
+                <form  action="">
+                    <div class="weui_cells weui_cells_form">
+                        <input type="hidden" class="weui_input" name="openid"  placeholder="请输入openid">
+                        <input type="hidden" class="weui_input customerId" name="customerId"  value="9">
+
+                        <div class="weui_cell">
+                            <div class="weui_cell_hd"><label class="weui_label">联系人</label></div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                              <input class="weui_input" type="text" name="name"  placeholder="请输入名称">
+                            </div>
+                        </div>
+    
+                        <div class="weui_cell">
+                            <div class="weui_cell_hd"><label class="weui_label">性别</label></div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <input type="radio" name="sex" id="" value="0" checked>
+                                <label for="sex">男</label>
+                                <input type="radio" name="sex" id="" value="1">
+                                <label for="sex">女</label>
+                            </div>
+                        </div>
+
+                        <div class="weui_cell">
+                            <div class="weui_cell_hd"><label class="weui_label">联系电话</label></div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                              <input class="weui_input" name="mobile" type="text" placeholder="请输入电话号码">
+                            </div>
+                        </div>
+    
+                        <div class="weui_cell">
+                            <div class="weui_cell_hd"><label class="weui_label">地址</label></div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                              <input class="weui_input" name="address"  placeholder="请输入安装地址">
+                            </div>
+                        </div>
+    
+                        
+                    </div>
+                    <a href="javascript:;" class="weui_btn weui_btn_primary  swiper-next1">下一步</a>
+                </form>
+            </div>
+
+            <div class="swiper-slide swiper-no-swiping">
+                <h2 class="title"><span class="swiper-prev"> < 上一步</span> <span>监控设备参数</span> </h2>
+                <form action="">
+                    <input type="hidden" class="weui_input customerId" name="customerId"  value="9">
+                    <input type="hidden" class="weui_input offerId" name="offerId" value='1'>
+
+                    <div class="weui_cells weui_cells_form">
+                      
+                      <div class="weui_cell">
+                        <div class="weui_cell_hd"><label class="weui_label">场景(多选)</label></div>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <input type="checkbox" name="scene[0]"  value="办公室">
+                            <label for="record_time">办公室</label>
+                            <input type="checkbox" name="scene[1]"  value="仓库">
+                            <label for="record_time">仓库</label>
+                            <input type="checkbox" name="scene[2]"  value="店铺">
+                            <label for="record_time">店铺</label>
+                            <input type="checkbox" name="scene[3]"  value="商场">
+                            <label for="record_time">商场</label>
+                            <input type="checkbox" name="scene[4]"  value="停车场">
+                            <label for="record_time">停车场</label>
+                            <input type="checkbox" name="scene[5]"  value="其他">
+                            <label for="record_time">其他</label>
+                        </div>
+                      </div>
+
+                        <div class="weui_cell weui_cell_select">
+                            <div class="weui_cell_bd weui_cell_primary">
+                              <select class="weui_select" name="pixel">
+                                <option selected="" value="100万像素">100万像素</option>
+                                <option value="200万像素">200万像素</option>
+                                <option value="400万像素">400万像素</option>
+                              </select>
+                            </div>
+                        </div>
+
+                        <div class="weui_cell">
+                            <div class="weui_cell_hd"><label class="weui_label">数量</label></div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                              <input class="weui_input" name="number" placeholder="请输入数量">
+                            </div>
+                            <span class="weui_label">(个)</span>
+                        </div>
+
+                        <div class="weui_cell">
+                            <div class="weui_cell_hd"><label class="weui_label">录像时间要求</label></div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <input type="radio" name="record_time"  value="0" checked>
+                                <label for="record_time">月</label>
+                                <input type="radio" name="record_time"  value="1">
+                                <label for="record_time">天</label>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                    <a href="javascript:;" class="weui_btn weui_btn_primary  swiper-next2">下一步</a>
+                </form>
+            </div>
+
+            <div class="swiper-slide swiper-no-swiping">
+                <h2 class="title"><span class="swiper-prev"> < 上一步</span> <span>现场信息</span> </h2>
+                <form action="">
+                    <input type="hidden" class="weui_input offerId" name="offerId" value='1'>
+
+                    <div class="weui_cells weui_cells_form">
+
+                        <div class="weui_cell">
+                            <div class="weui_cell_hd"><label class="weui_label">是否勘察环境</label></div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <input type="radio" name="prospect" id="" value="1" checked>
+                                <label for="prospect">是</label>
+                                <input type="radio" name="prospect" id="" value="0">
+                                <label for="prospect">否</label>
+                            </div>
+                        </div>
+
+                        <div class="weui_cell">
+                            <div class="weui_cell_hd"><label for="" class="weui_label">日期</label></div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                              <input class="weui_input" type="date" name="prospect_time" value="">
+                            </div>
+                        </div>
+
+                        <div class="weui_cell">
+                            <div class="weui_cell_hd"><label class="weui_label">空间</label></div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <input type="radio" name="space"  value="平层" checked>
+                                <label for="space">平层</label>
+                                <input type="radio" name="space"  value="多层 ">
+                                <label for="space">多层 </label>
+                                <input type="radio" name="space"  value="多个不相连位置 ">
+                                <label for="space">多个不相连位置 </label>
+                            </div>
+                        </div>
+
+                        <div class="weui_cell">
+                            <div class="weui_cell_hd"><label class="weui_label">面积</label></div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                              <input class="weui_input" name="area" placeholder="请输入面积">
+                            </div>
+                            <span class="weui_label">(平方米)</span>
+                        </div>
+
+                    </div>
+                    <a href="javascript:;" class="weui_btn weui_btn_primary  swiper-next3">下一步</a>
+                </form>
+            </div>
+
+            <div class="swiper-slide swiper-no-swiping">
+                <h2 class="title"><span class="swiper-prev"> < 上一步</span> <span>图片上传</span> </h2>
+                <form action="">
+                    <input type="hidden" class="weui_input offerId" name="offerId" value='1'>
+
+                    <div class="weui_cells weui_cells_form">
+                        
+                        <div class="weui_cell weui_cell_warn">
+                            <div class="weui_cell">
+                              <div class="weui_cell_bd weui_cell_primary">
+                                <div class="weui_uploader">
+                                  <div class="weui_uploader_hd weui_cell">
+                                    <div class="weui_cell_bd weui_cell_primary">平面图</div>
+                                    <div class="weui_cell_ft">1/1</div>
+                                  </div>
+                                  <div class="weui_uploader_bd">
+                                    <ul class="weui_uploader_files">
+                                        <li class="weui_uploader_file" style="background-image:url(http://shp.qpic.cn/weixinsrc_pic/pScBR7sbqjOBJomcuvVJ6iacVrbMJaoJZkFUIq4nzQZUIqzTKziam7ibg/)"></li>
+                                        <li class="weui_uploader_input_wrp">
+                                            <input class="weui_uploader_input" type="file" accept="image/jpg,image/jpeg,image/png,image/gif" multiple="">
+                                        </li>
+                                    </ul>
+                                   
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="weui_cell weui_cell_warn">
+                            <div class="weui_cell">
+                              <div class="weui_cell_bd weui_cell_primary">
+                                <div class="weui_uploader">
+                                  <div class="weui_uploader_hd weui_cell">
+                                    <div class="weui_cell_bd weui_cell_primary">现场照片</div>
+                                    <div class="weui_cell_ft">1/6</div>
+                                  </div>
+                                  <div class="weui_uploader_bd">
+                                    <ul class="weui_uploader_files">
+                                      <li class="weui_uploader_file" style="background-image:url(http://shp.qpic.cn/weixinsrc_pic/pScBR7sbqjOBJomcuvVJ6iacVrbMJaoJZkFUIq4nzQZUIqzTKziam7ibg/)"></li>
+                                      <li class="weui_uploader_file weui_uploader_status" style="background-image:url(http://shp.qpic.cn/weixinsrc_pic/pScBR7sbqjOBJomcuvVJ6iacVrbMJaoJZkFUIq4nzQZUIqzTKziam7ibg/)">
+                                        <div class="weui_uploader_status_content">
+                                          <i class="weui_icon_warn"></i>
+                                        </div>
+                                      </li>
+                                      <li class="weui_uploader_file weui_uploader_status" style="background-image:url(http://shp.qpic.cn/weixinsrc_pic/pScBR7sbqjOBJomcuvVJ6iacVrbMJaoJZkFUIq4nzQZUIqzTKziam7ibg/)">
+                                        <div class="weui_uploader_status_content">50%</div>
+                                      </li>
+                                    </ul>
+                                    <div class="weui_uploader_input_wrp">
+                                      <input class="weui_uploader_input" type="file" accept="image/jpg,image/jpeg,image/png,image/gif" multiple="">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+ 
+
+                    </div>
+                    <a href="javascript:;" class="weui_btn weui_btn_primary swiper-next">下一步</a>
+                </form>
+            </div>
+
+            <div class="swiper-slide swiper-no-swiping">
+                <h2 class="title"><span class="swiper-prev"> < 上一步</span> <span>商务信息</span> </h2>
+                <form action="">
+                  <input type="hidden" class="weui_input offerId" name="offerId" value='1'>
+
+                    <div class="weui_cells weui_cells_form">
+                        
+                        <div class="weui_cell">
+                            <div class="weui_cell_hd"><label class="weui_label">发票类型</label></div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <input type="radio" name="invoice_type"  value="0" checked>
+                                <label for="invoice_type">不开发票</label>
+                                <input type="radio" name="invoice_type"  value="1">
+                                <label for="invoice_type">普票</label>
+                                <input type="radio" name="invoice_type"  value="2">
+                                <label for="invoice_type">专票</label>
+                            </div>
+                        </div>
+
+                        <div class="weui_cell">
+                            <div class="weui_cell_hd"><label class="weui_label">发票抬头</label></div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                              <input class="weui_input" name="invoice_title" placeholder="请输入抬头">
+                            </div>
+                        </div>
+
+                        <div class="weui_cell">
+                            <div class="weui_cell_hd"><label class="weui_label">税号</label></div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                              <input class="weui_input" name="invoice_no" placeholder="请输入税号">
+                            </div>
+                        </div>
+
+                    </div>
+                    <a href="javascript:;" class="weui_btn weui_btn_primary swiper-finish">完成</a>
+                </form>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- 如果需要分页器 -->
+        <!-- <div class="swiper-pagination"></div> -->
+        
+        <!-- 如果需要导航按钮 -->
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+        
+        <!-- 如果需要滚动条 -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+    </div>
+
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+    <!-- swiper --> 
+    <script src="./Brightness/View/js/swiper/swiper.js"> </script>
+    <!-- jquery weui -->
+    <script src="//cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/jquery-weui/0.8.3/js/jquery-weui.min.js"></script>
+    <script src="./Brightness/View/js/monitoring.js"></script>
+</body>
+</html>

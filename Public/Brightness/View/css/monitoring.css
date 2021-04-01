@@ -1,0 +1,27 @@
+body{
+    /* overflow: hidden; */
+}
+.swiper-container {
+    width: 100%;
+    height: 100vh;
+    /* height: 100vh; */
+    /* background-color: red; */
+}  
+
+.swiper-slide h2.title{
+    padding: 0.4rem;
+    text-align: center;
+    background-image: linear-gradient(to top right,#39b54a,#8dc63f);
+    color: #fff;
+
+
+}
+.swiper-slide h2.title .swiper-prev{
+    font-size: 0.6rem;
+    float: left;
+    padding-left: 0.3rem;
+    line-height: 2rem;
+}
+form .weui_cells{
+    margin-top: unset;
+}

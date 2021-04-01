@@ -1,0 +1,185 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>曾健辉</Author>
+  <LastAuthor>Windows 用户</LastAuthor>
+  <Created>2018-11-02T13:16:04Z</Created>
+  <LastSaved>2020-10-23T09:29:20Z</LastSaved>
+  <Version>14.00</Version>
+ </DocumentProperties>
+ <CustomDocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <KSOProductBuildVer dt:dt="string">2052-10.1.0.7698</KSOProductBuildVer>
+  <KSOReadingLayout dt:dt="boolean">0</KSOReadingLayout>
+ </CustomDocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>12045</WindowHeight>
+  <WindowWidth>12480</WindowWidth>
+  <WindowTopX>0</WindowTopX>
+  <WindowTopY>0</WindowTopY>
+  <TabRatio>820</TabRatio>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+  <DisplayInkNotes>False</DisplayInkNotes>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Center"/>
+   <Borders/>
+   <Font ss:FontName="宋体" x:CharSet="134" ss:Size="12" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s64">
+   <Font ss:FontName="宋体" x:CharSet="134" ss:Size="12" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s65">
+   <Alignment ss:Vertical="Center"/>
+  </Style>
+  <Style ss:ID="s66">
+   <Alignment ss:Vertical="Center"/>
+   <Borders/>
+   <Font ss:FontName="宋体" x:CharSet="134" ss:Size="12" ss:Color="#000000"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s67">
+   <Alignment ss:Vertical="Center"/>
+   <Borders/>
+   <Font ss:FontName="黑体" x:CharSet="134" x:Family="Modern" ss:Size="24"
+    ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s68">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Center"/>
+   <Borders/>
+   <Font ss:FontName="宋体" x:CharSet="134" ss:Size="12" ss:Color="#000000"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s69">
+   <Alignment ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders/>
+   <Font ss:FontName="宋体" x:CharSet="134" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s70">
+   <Alignment ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders/>
+   <Font ss:FontName="方正黑体简体" x:CharSet="134" ss:Color="#000000"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s74">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Center"/>
+   <Borders/>
+   <Font ss:FontName="黑体" x:CharSet="134" x:Family="Modern" ss:Size="24"
+    ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s75">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Dot" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s76">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Dot" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="宋体" x:CharSet="134" ss:Color="#000000"/>
+  </Style>
+ </Styles>
+ <Names>
+  <NamedRange ss:Name="orderIdLinks" ss:RefersTo="=#REF!"/>
+ </Names>
+ <Worksheet ss:Name="bill">
+  <Names>
+   <NamedRange ss:Name="Print_Area" ss:RefersTo="=bill!R1C1:R5C5"/>
+   <NamedRange ss:Name="Print_Titles" ss:RefersTo="=bill!R1:R5"/>
+  </Names>
+  <Table ss:ExpandedColumnCount="6" ss:ExpandedRowCount="5" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="54" ss:DefaultRowHeight="14.25">
+   <Column ss:AutoFitWidth="0" ss:Width="109.5"/>
+   <Column ss:StyleID="s65" ss:AutoFitWidth="0" ss:Width="175.5"/>
+   <Column ss:StyleID="s65" ss:AutoFitWidth="0" ss:Width="43.5"/>
+   <Column ss:AutoFitWidth="0" ss:Width="173.25"/>
+   <Column ss:AutoFitWidth="0" ss:Width="75.75"/>
+   <Column ss:AutoFitWidth="0" ss:Width="15"/>
+   <Row ss:AutoFitHeight="0" ss:Height="24.75" ss:StyleID="s64">
+    <Cell ss:StyleID="s66"><NamedCell ss:Name="Print_Area"/><NamedCell
+      ss:Name="Print_Titles"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s74"><Data ss:Type="String">{oo}材料清单</Data><NamedCell
+      ss:Name="Print_Area"/><NamedCell ss:Name="Print_Titles"/></Cell>
+    <Cell ss:StyleID="s67"><NamedCell ss:Name="Print_Area"/><NamedCell
+      ss:Name="Print_Titles"/></Cell>
+    <Cell ss:StyleID="s67"><NamedCell ss:Name="Print_Area"/><NamedCell
+      ss:Name="Print_Titles"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5" ss:StyleID="s64">
+    <Cell ss:StyleID="s68"><NamedCell ss:Name="Print_Area"/><NamedCell
+      ss:Name="Print_Titles"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s75"><Data ss:Type="String">Page: 1-10   Date:2019/12/10</Data><NamedCell
+      ss:Name="Print_Area"/><NamedCell ss:Name="Print_Titles"/></Cell>
+    <Cell ss:StyleID="s69"><NamedCell ss:Name="Print_Area"/><NamedCell
+      ss:Name="Print_Titles"/></Cell>
+    <Cell ss:StyleID="s69"><NamedCell ss:Name="Print_Area"/><NamedCell
+      ss:Name="Print_Titles"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="s64">
+    <Cell ss:MergeAcross="2" ss:StyleID="s76"><Data ss:Type="String">类别：E类基层 fdfd 编号：JC</Data><NamedCell
+      ss:Name="Print_Area"/><NamedCell ss:Name="Print_Titles"/></Cell>
+    <Cell ss:StyleID="s70"><NamedCell ss:Name="Print_Area"/><NamedCell
+      ss:Name="Print_Titles"/></Cell>
+    <Cell ss:StyleID="s70"><NamedCell ss:Name="Print_Area"/><NamedCell
+      ss:Name="Print_Titles"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5" ss:StyleID="s64">
+    <Cell ss:MergeAcross="2" ss:StyleID="s76"><Data ss:Type="String">   项目:德阳旌阳新城吾悦广场 {oo}    区域：公区区域</Data><NamedCell
+      ss:Name="Print_Area"/><NamedCell ss:Name="Print_Titles"/></Cell>
+    <Cell ss:StyleID="s70"><NamedCell ss:Name="Print_Area"/><NamedCell
+      ss:Name="Print_Titles"/></Cell>
+    <Cell ss:StyleID="s70"><NamedCell ss:Name="Print_Area"/><NamedCell
+      ss:Name="Print_Titles"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13.5">
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="Print_Area"/><NamedCell
+      ss:Name="Print_Titles"/></Cell>
+    <Cell ss:Index="4" ss:StyleID="s65"><NamedCell ss:Name="Print_Area"/><NamedCell
+      ss:Name="Print_Titles"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="Print_Area"/><NamedCell
+      ss:Name="Print_Titles"/></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="11.53"/>
+    <Footer x:Margin="0"/>
+    <PageMargins x:Bottom="0.21" x:Left="0.51" x:Right="0" x:Top="0.51"/>
+   </PageSetup>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <Scale>90</Scale>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <ShowPageBreakZoom/>
+   <PageBreakZoom>100</PageBreakZoom>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>1</ActiveRow>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>
